@@ -7,3 +7,28 @@
 //
 
 #include "command.h"
+
+namespace CommandSpace {
+    /* CREATE NODE WITH { "name": "something", "val1": "something" } ON GRAPH 'graph';
+     * DEC TYPE WITH val_dict ON TYPE 'identifier';
+     *
+     */
+    
+    enum declaration {
+        CREATE,
+        ALTER,
+        DELETE,
+        FIND
+    } DEC;
+    
+    enum identifiers {
+        NODE,
+        EDGE,
+        GRAPH
+    } TYPE;
+    
+    enum prepositions {
+        WITH,
+        ON
+    } PREP;
+}
