@@ -10,16 +10,14 @@
 
 #include "tokenizer.h"
 
-namespace MainSpace {
+int main(int argc, const char * argv[])
+{
     enum shell_cmds {
         QUIT='q',
         VIEW='v',
         ACT='a'
     };
-}
-
-int main(int argc, const char * argv[])
-{
+    
     while (true){
         std::cout << ">>> ";
         
@@ -27,12 +25,12 @@ int main(int argc, const char * argv[])
         std::getline( std::cin, request );
         
         if (request.length() < 2){
-            char cmd = (MainSpace::shell_cmds) request[0];
-            if (cmd == MainSpace::shell_cmds::QUIT) {
+            char cmd = (shell_cmds) request[0];
+            if (cmd == QUIT) {
                 break;
-            } else if (cmd == MainSpace::shell_cmds::VIEW) {
+            } else if (cmd == VIEW) {
                 
-            } else if (cmd == MainSpace::shell_cmds::ACT) {
+            } else if (cmd == ACT) {
                 
             } else {
                 std::cerr << "Command not recognized\n";
