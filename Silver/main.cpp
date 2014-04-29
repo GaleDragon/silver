@@ -8,7 +8,7 @@
 
 #include <iostream>
 
-#include "tokenizer.h"
+#include "token/tokenizer.h"
 
 int main(int argc, const char * argv[])
 {

@@ -22,3 +22,9 @@
 
 *.xcodeproj
 *.xcodeproj/*
+.DS_Store
+CMakeCache.txt
+CMakeFiles/*
+cmake_install.cmake
+Makefile
+Silver/silver
